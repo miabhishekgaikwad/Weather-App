@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="currentWeather">
+            <div class="searchIn">
+                <input type="search" name="" id="search" placeholder="Enter City">
+                <button class="searchBtn" id="searchBtn"><img src="/img/search.svg"></button>
+
+            </div>
+
+            <div class="weatherImg"></div>
+            <div class="currTempCont">
+
+                <div class="currTemp">10<span>&degC</span></div>
+                
+
+            </div>
+            <div class="city">
+                <p>Nagpur</p><span class="countryAndReg">Maharashtra, India</span>
+            </div>
+
+            <div class="condition">
+                <div class="currentcondition"><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png"
+                        alt="">Clear</div>
+                <div class="otherInfo">
+                    <div class="feelsLike">
+                        Feels Like: <span class="feelsLikeVal">28&degC</span>
+                    </div>
+
+                    <div class="humidity">
+                        Humidity: <span class="humidityVal">22%</span>
+                    </div>
+                    <div class="uv">
+                        UV: <span class="uvVal">10.1</span>
+                    </div>
+
+                    <div class="windkph">
+                        Wind: <span class="windKphVal">ENE 28 kp/h</span>
+                    </div>
+                    <div class="windGustKph">
+                        Wind Gust: <span class="windGustKphVal">280 kp/h</span>
+                    </div>
+                    <div class="dewPoint">
+                        Dew Point: <span class="dewPointVal">6.2&degC</span>
+                    </div>
+                    <div class="pressure">
+                        Pressure: <span class="pressureVal">1014 mb</span>
+                    </div>
+                    <div class="cloudCover">
+                        Cloud Cover: <span class="cloudCoverVal">0%</span>
+                    </div>
+                    <div class="visibility">
+                        Visibility: <span class="visibilityVal">8km</span>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>Designed & Developed by <a class="creditAbhi" href="https://github.com/miabhishekgaikwad">Abhishek Gaikwad</a></p>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
