@@ -7,11 +7,12 @@
 }
 
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2020/08/30/09/28/buildings-5528981_1280.jpg);
+  background-image: url(/img/lightning.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  background-attachment: fixed;
+  color: white
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
 }
 
 .currentWeather {
@@ -146,4 +148,74 @@ body {
 }
 .creditAbhi:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .currentWeather button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 35px;
+    padding: 12px 21px 12px 12px;
+  }
+  
+  .currentWeather input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 35px;
+  }
+
+  .otherInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .footer{
+    width: 300px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .otherInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .currTemp{
+    font-size: 60px;
+  }
+  .city{
+    font-size: 70px;
+  }
+  .currTempCont span {
+    font-size: 16px;
+    position: relative;
+    top: -36px;
+    color: rgb(170, 168, 168);
+  }
+
 }

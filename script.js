@@ -24,13 +24,13 @@ async function fetchWeather(city = "latur"){
     let visibilityVal = document.querySelector(".visibilityVal");
     let lastUpdatedVal = document.querySelector(".lastUpdatedVal");
   
-    console.log(search);
-    console.log(api);
+    // console.log(search);
+    // console.log(api);
   
     // api se data fetch karana
     let response = await fetch(api);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
   
     // data ko show karana
     currTemp.innerHTML = `${data.current.temp_c}<span>&degC</span>`;
