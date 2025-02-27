@@ -1,12 +1,12 @@
 let searchBtn = document.getElementById("searchBtn");
 
 
-async function fetchWeather(city = "nyc"){
+async function fetchWeather(city = "latur"){
     let inputCity = document.getElementById("search").value.trim();
     if(inputCity){
         city = inputCity
     }
-    let apiKey = "1ac05829336b4c7ebef125326252602"; // enter your api key
+    let apiKey = "1ac05829336b4c7ebef125326252602"; // enter your api key (get your api kye: https://www.weatherapi.com/) 
     let api = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
   
     // sabhi fealds
