@@ -13,7 +13,11 @@ searchBtn.addEventListener("click", async () => {
   let humidityVal = document.querySelector(".humidityVal");
   let uvVal = document.querySelector(".uvVal");
   let windKphVal = document.querySelector(".windKphVal");
-  let windGustKph = document.querySelector(".windGustKph");
+  let windGustKphVal = document.querySelector(".windGustKphVal");
+  let dewPointVal = document.querySelector(".dewPointVal");
+  let pressureVal = document.querySelector(".pressureVal");
+  let cloudCoverVal = document.querySelector(".cloudCoverVal");
+  let visibilityVal = document.querySelector(".visibilityVal");
 
   console.log(search);
   console.log(api);
@@ -32,8 +36,12 @@ searchBtn.addEventListener("click", async () => {
   feelsLikeVal.innerHTML = `${data.current.feelslike_c}&degC`;
   uvVal.innerHTML = `${data.current.uv}%`;
   windKphVal.innerHTML = `${data.current.wind_dir} ${data.current.wind_kph} kp/h`;
-  windGustKph.innerHTML = `${data.current.gust_mph}%`;
-
+  windGustKphVal.innerHTML = `${data.current.gust_mph}%`;
+  dewPointVal.innerHTML = `${data.current.dewpoint_c}&degC`;
+  pressureVal.innerHTML = `${data.current.pressure_mb} mb`;
+  cloudCoverVal.innerHTML = `${data.current.cloud}%`;
+  visibilityVal.innerHTML = `${data.current.vis_km}km`;
+  
 
 
 
