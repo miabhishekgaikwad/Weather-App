@@ -26,11 +26,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 623px;
-  padding: 10px;
+  width: 560px;
+  height: auto;
+  padding: 30px 10px 30px 10px;;
   backdrop-filter: blur(4px);
   border-radius: 9px;
+  gap: 13px;
+  flex-wrap: wrap;
 }
 
 .currentWeather button {
@@ -105,12 +107,11 @@ body {
 }
 
 .otherInfo {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 12px;
-  flex-wrap: wrap;
   width: 100%;
-  transition: all 0.3 ease-out;
+  transition: all 0.3s ease-in;
   padding: 12px;
   justify-content: center;
   align-items: center;
@@ -118,6 +119,11 @@ body {
 
 .otherInfo span {
   color: rgb(170, 168, 168);
+}
+
+.otherInfo div{
+  width: 160px;
+
 }
 .currentcondition {
   font-size: 45px;
